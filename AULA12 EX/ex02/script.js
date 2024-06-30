@@ -65,13 +65,8 @@ function somatudoedale() {
         img.src = "../assets/idosaF.png"
         frase.innerHTML = `Detectamos que você é uma idosa do sexo feminino de ${calc} anos!`
         document.body.style.backgroundColor = "#d3d0cb"
-    }else if (genero == "Outro"){
-        img.src = "../assets/papagaio.png"
-        frase.innerHTML = `Detectamos que você é GAY? Talvez!`
-        document.body.style.backgroundColor = "#61754e"
     }
-
-}   
+}
 
 
      
