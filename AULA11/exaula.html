@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+
+    <h1>Aqui é verificado os paises</h1>
+    <p>Digite abaixo o seu País!</p>
+
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" id="mybtn">
+    <div id="res">
+        Aqui será sua Resposta!
+    </div>
+    
+
+    <script>
+        document.getElementById("mybtn").addEventListener("click", clicar)
+
+        function clicar() {
+            pais = document.getElementById("pais")
+            res = document.getElementById("res")
+            if (pais == "Brasil") {
+                res.innerHTML = "Você é brasileiro :D"
+            }else {
+                res.innerHTML = "VOCÊ NÃO É <strong>BRASILEIRO<strong/> >:|"
+            }
+        }
+    </script>
+    
+</body>
+</html>

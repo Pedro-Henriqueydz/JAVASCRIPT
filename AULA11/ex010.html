@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Velocidade</title>
+</head>
+<body>
+    <h1>Sistema verificador de multas!</h1>
+
+    <input type="number" name="txtvel" id="txtvel"> Km/H
+    <input type="button" value="Verificar" id="mybtn">
+    <div id="res">
+        Resultado:
+        <p id="fala"></p>
+    </div>
+
+    <script>
+        document.getElementById("mybtn").addEventListener("click", clicar)
+
+        function clicar() {
+            tv = document.getElementById("txtvel")
+            n1 = Number(tv.value)
+            res = document.getElementById("fala")
+            res.innerHTML = `Sua Velocidade atual é de <strong>${n1}KM/H<strong/>`
+                if (n1 > 80) {
+                    res.innerHTML = `Infelizmente detectamos que sua velocidade estava acima da permitida e por isso você será multado!`
+                }else {
+                    res.innerHTML = "Tudo nos conforme amigo! Pode prosseguir!!!!"
+                }
+
+
+        }
+    </script>
+    
+    
+</body>
+</html>
