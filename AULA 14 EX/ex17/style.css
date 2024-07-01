@@ -31,3 +31,8 @@ div {
     text-align: center;
     padding: 5px;
 }
+
+select {
+    margin: 10px;
+
+}

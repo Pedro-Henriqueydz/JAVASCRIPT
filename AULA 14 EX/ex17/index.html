@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <main>
         <section>
             <div id="msg">
-                Aqui vai aparecer a mensagem...
+                Digite um número para gerar a tabuada
             </div>
-            <div id="foto">
-                <img id="imagem" src="../assets/manhã.png" alt="">
-                <p id="frase">Texto ai</p>
+            <div>
+                Numero: <input type="number" name="txtnum" id="txtnum"><br>
+                <select name="tabuada" id="tabuada" size="10">
+                    <option>Digite um valor acima</option>
+                </select>
+                <input type="button" value="Calcular" id="mybtn">
+                <p id="frase"></p>
             </div>
         </section>
     </main>

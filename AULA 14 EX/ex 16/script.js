@@ -14,9 +14,20 @@ function contar() {
         inicio = Number(ini.value)
         fim = Number(end.value)
         passo = Number(pas.value)
-        for (count = inicio; count <= fim; count += passo) {
-            conta.innerHTML += ` ${count} \u{1F449}` 
-            frase.innerHTML = "Conta feita!"
+        if (passo <= 0) {
+            alert('Passo Inválido!')
+            passo = 1
+        }
+        if(inicio < fim) {
+            for (count = inicio; count <= fim; count += passo) {
+                conta.innerHTML += ` ${count} \u{1F449}` 
+                frase.innerHTML = "Conta feita!"
+            }
+        } else {
+            for (count = inicio; count >= fim; count -= passo) {
+                conta.innerHTML += ` ${count} \u{1F449}` 
+                frase.innerHTML = "Conta feita!"
+            }
         }
         conta.innerHTML += `\u{1F3C1}` 
     }
